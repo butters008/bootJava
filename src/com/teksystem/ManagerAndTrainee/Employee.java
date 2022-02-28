@@ -24,12 +24,10 @@ public class Employee {
     }
 
     public double calcSalary(){
-        double result = basicSalary + (basicSalary * specialAllowance/100D) + (basicSalary * hra/100D);
-        return result;
+        return basicSalary + (basicSalary * specialAllowance/100D) + (basicSalary * hra/100D);
     }
 
     public double calcTransportAllowance(){
-        double result = 10D*basicSalary/100D;
-        return result;
+        return 10D*basicSalary/100D;
     }
 }

@@ -14,8 +14,9 @@ public class Manager extends Employee {
 
     @Override
     public double calcTransportAllowance() {
-        double result;
         double basicSalary = getBasicSalary();
-        return result = 15* basicSalary /100.;
+        return 15* basicSalary /100.;
     }
+
+
 }
