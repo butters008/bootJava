@@ -1,4 +1,4 @@
-package com.teksystem;
+package com.teksystem.ManagerAndTrainee;
 
 public class Employee {
     private long employeeID;
@@ -29,7 +29,7 @@ public class Employee {
     }
 
     public double calcTransportAllowance(){
-        double result = 15D*basicSalary/100D;
+        double result = 10D*basicSalary/100D;
         return result;
     }
 }

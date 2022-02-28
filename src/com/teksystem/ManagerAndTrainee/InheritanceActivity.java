@@ -1,4 +1,4 @@
-package com.teksystem;
+package com.teksystem.ManagerAndTrainee;
 
 public class InheritanceActivity {
     public static void main(String[] args) {

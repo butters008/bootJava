@@ -3,6 +3,7 @@ package com.teksystem;
 import java.util.Scanner;
 
 import static java.lang.Math.floor;
+import static java.lang.Math.random;
 
 public class Main {
 
@@ -109,20 +110,79 @@ public class Main {
 //    END OF 63 -------------------------------------------------------------------------------------------------------
 
 
+//    Side 22, Loops Slides -------------------------------------------------------------------------------------------
+    public static void guessTheNumber(){
+        int gameNumber = (int)(Math.random() * 101);
+        int guessNumber = -1;
+        Scanner scanGame = new Scanner(System.in);
+        while(gameNumber != guessNumber){
+            System.out.println("Please input a number from 0 - 100 ");
+            guessNumber = scanGame.nextInt();
+            if(gameNumber == guessNumber) {
+                System.out.println("You Won");
+            }
+            else if(gameNumber > guessNumber){
+                System.out.println("Guess higher");
+                System.out.println(gameNumber); //Debugging purpose
+            }
+            else if(gameNumber < guessNumber){
+                System.out.println("Guess lower");
+                System.out.println(gameNumber); //Debugging purpose
+            }
+            else{
+                System.out.println("Out of Bounds guess");
+            }
+        }
+        System.out.println("Exited game loop");
+    }
+//    END OF 22 ------------------------------------------------------------------------------------------------------
+
+//    Slide 61 , Loop Slides ------------------------------------------------------------------------------------------
+    public static void multiplicationTable(int x){
+        for(int i = 0; i < x;  i++){
+            for(int k = 0; k <= x; k++){
+                if (k == x){
+                    System.out.print("\n");
+                }else{
+                    System.out.printf(String.format("%4d", ((k+1) * (i+1))));
+//                    System.out.print(((k+1) * (i+1)) + "\t " + "(i = " + i + " )" + " " + "(k = " + k + " )\t");
+                }
+
+            }
+        }
+    }
+//    END OF 61 --------------------------------------------------------------------------------------------------------
+
+//    Question 62 GCD --------------------------------------------------------------------------------------------------
+    public static void gcd() {
+
+    }
+//    END 62 ----------------------------------------------------------------------------------------------------------
+
 
     public static void main(String[] args) {
-        System.out.println("This is from slide 44 on conidtional");
-        System.out.println(bmi(350, 3));
-        System.out.println(bmi(250, 3));
-        System.out.println(bmi(200, 3));
-        System.out.println(bmi(150, 3));
+        // Conditionals -----------------------------------------------------------------------------
+//        System.out.println("This is from slide 44 on conidtional");
+//        System.out.println(bmi(350, 3));
+//        System.out.println(bmi(250, 3));
+//        System.out.println(bmi(200, 3));
+//        System.out.println(bmi(150, 3));
+//
+//        System.out.println("\n\nThis is from slide 63 on conidtional");
+//        System.out.println(computeTaxes("Single", 8000));
+//        System.out.println(computeTaxes("Married", 174000));
+//        System.out.println(computeTaxes("Married Filing Seperate", 143221));
+//        System.out.println(computeTaxes("Head of House", 212323));
+//        System.out.println(computeTaxes("Opps", 212323));
+        // Conditionals -----------------------------------------------------------------------------
+        // Loops ------------------------------------------------------------------------------------
+//        System.out.println("\n\nThis is from slide 22 on Loops");
+//        guessTheNumber();
+        System.out.println("\n\nThis is from slide 61 on Loops");
+        multiplicationTable(12);
 
-        System.out.println("\n\nThis is from slide 63 on conidtional");
-        System.out.println(computeTaxes("Single", 8000));
-        System.out.println(computeTaxes("Married", 174000));
-        System.out.println(computeTaxes("Married Filing Seperate", 143221));
-        System.out.println(computeTaxes("Head of House", 212323));
-        System.out.println(computeTaxes("Opps", 212323));
+
+        // Loops ------------------------------------------------------------------------------------
 
     }//END of MAIN
 }// End of Class

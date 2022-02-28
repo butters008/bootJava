@@ -1,6 +1,8 @@
-package com.teksystem;
+package com.teksystem.Monster;
 
-public class WaterMonster extends Monster{
+import com.teksystem.Monster.Monster;
+
+public class WaterMonster extends Monster {
     public WaterMonster(String name) {
         super(name);
     }

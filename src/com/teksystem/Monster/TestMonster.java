@@ -1,4 +1,4 @@
-package com.teksystem;
+package com.teksystem.Monster;
 
 public class TestMonster {
     public static void main(String[] args) {

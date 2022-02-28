@@ -1,4 +1,6 @@
-package com.teksystem;
+package com.teksystem.Monster;
+
+import com.teksystem.Monster.Monster;
 
 public class FireMonster extends Monster {
 

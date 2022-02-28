@@ -1,4 +1,4 @@
-package com.teksystem;
+package com.teksystem.Monster;
 
 public class Monster {
     private String name;

@@ -1,6 +1,8 @@
-package com.teksystem;
+package com.teksystem.ManagerAndTrainee;
 
-public class Manager extends Employee{
+import com.teksystem.ManagerAndTrainee.Employee;
+
+public class Manager extends Employee {
 //    public Manager(long employeeID, String employeeName, String emmployeeAddress, long employeePhone) {
 //        super(employeeID, employeeName, emmployeeAddress, employeePhone);
 //    }
