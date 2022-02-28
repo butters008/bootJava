@@ -16,14 +16,6 @@ public class Employee {
         this.employeePhone = employeePhone;
     }
 
-//    public Employee(long employeeID, String employeeName, String emmployeeAddress, long employeePhone, double basicSalary) {
-//        this.employeeID = employeeID;
-//        this.employeeName = employeeName;
-//        this.emmployeeAddress = emmployeeAddress;
-//        this.employeePhone = employeePhone;
-//        this.basicSalary = basicSalary;
-//    }
-
     public double getBasicSalary(){
         return this.basicSalary;
     }
@@ -32,12 +24,12 @@ public class Employee {
     }
 
     public double calcSalary(){
-        double result = basicSalary + (basicSalary * specialAllowance/100) + (basicSalary * hra/100);
+        double result = basicSalary + (basicSalary * specialAllowance/100D) + (basicSalary * hra/100D);
         return result;
     }
 
     public double calcTransportAllowance(){
-        double result = 15*basicSalary/100;
+        double result = 15D*basicSalary/100D;
         return result;
     }
 }
