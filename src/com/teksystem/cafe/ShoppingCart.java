@@ -67,9 +67,6 @@ public class ShoppingCart extends Shop{
 
         tax = calcTax(subtotal);
         total = subtotal + tax;
-        System.out.println(subtotal);
-        System.out.println(tax);
-        System.out.println(total);
     }
 
     public String printMenuOptions(){
