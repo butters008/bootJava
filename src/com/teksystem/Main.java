@@ -1,5 +1,8 @@
 package com.teksystem;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.sql.Date;
 import java.util.Scanner;
 
 import static java.lang.Math.floor;
@@ -175,16 +178,60 @@ public class Main {
 //        System.out.println(computeTaxes("Head of House", 212323));
 //        System.out.println(computeTaxes("Opps", 212323));
         // Conditionals -----------------------------------------------------------------------------
+
         // Loops ------------------------------------------------------------------------------------
 //        System.out.println("\n\nThis is from slide 22 on Loops");
 //        guessTheNumber();
-        System.out.println("\n\nThis is from slide 61 on Loops");
-        multiplicationTable(12);
+//        System.out.println("\n\nThis is from slide 61 on Loops");
+//        multiplicationTable(12);
 
 
         // Loops ------------------------------------------------------------------------------------
 
+//        print out csv into java using printf in this format ex
+        //        Course Code: xxxx     |Course Name: xxxxxxxxxxxx      |Course Instructor: xxxxxx xxxxxx       |
+        //        Course Code: xxxx     |Course Name: xxxxxxxxxxxx      |Course Instructor: xxxxxx xxxxxx       |
+        //        Course Code: xxxx     |Course Name: xxxxxxxxxxxx      |Course Instructor: xxxxxx xxxxxx       |
+        //        Course Code: xxxx     |Course Name: xxxxxxxxxxxx      |Course Instructor: xxxxxx xxxxxx       |
+//        File file = new File("courses.txt");
+//        if(file.exists()){
+//            System.out.println("File Exists " + file.exists());
+            //Not sure why the try is not working
+//            try {
+//                Scanner input = new Scanner(System.in);
+//                while (input.hasNextLine()) {
+//                    String[] names = input.nextLine().split(",");
+//                    System.out.printf("Course Code: %s|Course Name: %s|Course Instructor: %s", names[0], names[1], names[2]);
+//                }
+//            } catch(FileNotFoundException e){
+//                e.printStackTrace();
+//            }
+
+//        }else{
+//            System.out.println("If does NOT exist: " + file.exists());
+//        }
+//        int x = 5;
+
+//___________________________________________________________________________________________________________________________________________
+
+        System.out.println("Figuring out the question 10 gotcha");
+        String one = "This";
+        String two = "is";
+        String three = "poop";
+        int i1 = 1;
+        int i2 = 2;
+        int i3 = 3;
+
+        evilQuestion10(one+two+three);
+        evilQuestion10(i1+i2+i3);
+
+
     }//END of MAIN
+
+    private static void evilQuestion10(String s) {
+        System.out.println(s);
+    }
+    private static void evilQuestion10(int i) {
+        System.out.println(i);
+    }
 }// End of Class
-
-

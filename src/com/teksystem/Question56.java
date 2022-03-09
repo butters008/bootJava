@@ -15,9 +15,7 @@ public class Question56 {
         int minutes = seconds % 3600 / 60;
         int hours = seconds % 86400 / 3600;
         int days = seconds / 86400;
-
         result = ("Total seconds " + seconds + " equates to Days: " + days + " Hours: " + hours + " Minutes: " + minutes + " Seconds " + sec);
-
         return result;
     }
 
@@ -32,9 +30,7 @@ public class Question56 {
         double cel = converting(59);
         String s = String.format("The converted temp is %4.1f", cel);
         System.out.println(s);
-
         System.out.println(convertTime(8239210));
-
 
     }
 
