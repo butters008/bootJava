@@ -1,3 +1,2 @@
-Keith,city,state,java
-Steve,Coon,MN,HTML
-Tom,City,State,CSS
+Keith,St Cloud,MN,Java
+Jafer,Austin,TX,Java

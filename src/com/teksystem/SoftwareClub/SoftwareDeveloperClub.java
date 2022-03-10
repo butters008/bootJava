@@ -53,7 +53,6 @@ public class SoftwareDeveloperClub {
 
         if(file.exists()) {
 //            System.out.println("File exists: " + file.exists());
-
             //Enter the information for a new member, first Strings, then add vars into object
             System.out.println("Please enter new club member information");
             System.out.println("Please Enter name:");
@@ -68,7 +67,20 @@ public class SoftwareDeveloperClub {
             arr.add(newMember);
             for (ClubMember club : arr) {
                 writer.write(club.getName()+","+club.getCity()+","+club.getState()+","+club.getLanguage()+"\n");
-//                writer.close();
+            }
+        }
+        writer.close();
+    }
+
+    public void deleteFromFile(String name) throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter(file));
+        for (ClubMember club : arr) {
+            if(club.getName().equals(name)){
+                arr.remove(club);
+                for (ClubMember newClub : arr) {
+                    writer.write(newClub.getName()+","+newClub.getCity()+","+newClub.getState()+","+newClub.getLanguage()+"\n");
+                }
+                break;
             }
         }
         writer.close();

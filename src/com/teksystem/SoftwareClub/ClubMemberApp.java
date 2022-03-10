@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ClubMemberApp {
     public static void main(String[] args) throws IOException {
 //        Have to pass in the literal location for file since passing it from driver to SoftwareDeveloperClub class
-        SoftwareDeveloperClub softwareDeveloperClub = new SoftwareDeveloperClub("C:/Users/kbutt/IdeaProjects/hello_world/src/com/teksystem/SoftwareClub/members.txt");
+        SoftwareDeveloperClub softwareDeveloperClub = new SoftwareDeveloperClub("C:/Users/kbutt/IdeaProjects/bootJava/src/com/teksystem/SoftwareClub/members.txt");
 
         softwareDeveloperClub.readFromFile();
 
@@ -22,7 +22,10 @@ public class ClubMemberApp {
                     softwareDeveloperClub.output();
                     break;
                 case 2:
-                    System.out.println("option2");
+                    System.out.println("Please enter the name for the member to be delete: ");
+                    String name = input.nextLine(); //To clear the buffer so String can be accepted
+                    name = input.nextLine();
+                    softwareDeveloperClub.deleteFromFile(name);
                     break;
                 case 3:
                     softwareDeveloperClub.writeToFile();
