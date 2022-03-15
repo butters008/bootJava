@@ -3,6 +3,7 @@ package com.teksystem;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.sql.Date;
+import java.util.HashMap;
 import java.util.Scanner;
 
 import static java.lang.Math.floor;
@@ -157,13 +158,22 @@ public class Main {
 //    END OF 61 --------------------------------------------------------------------------------------------------------
 
 //    Question 62 GCD --------------------------------------------------------------------------------------------------
-    public static void gcd() {
+    public  void gcd() {
+
 
     }
 //    END 62 ----------------------------------------------------------------------------------------------------------
 
 
     public static void main(String[] args) {
+
+
+
+
+
+
+
+
         // Conditionals -----------------------------------------------------------------------------
 //        System.out.println("This is from slide 44 on conidtional");
 //        System.out.println(bmi(350, 3));
