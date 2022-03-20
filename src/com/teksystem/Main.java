@@ -158,22 +158,30 @@ public class Main {
 //    END OF 61 --------------------------------------------------------------------------------------------------------
 
 //    Question 62 GCD --------------------------------------------------------------------------------------------------
-    public  void gcd() {
-
-
+//    Got an example from: "https://www.baeldung.com/java-greatest-common-divisor"
+    public static void gcd(int num1, int num2) {
+        int gcd = 1;
+        for (int i = 1; i <= num1 && i <= num2; i++) {
+            if (num1 % i == 0 && num2 % i == 0) {
+                gcd = i;
+            }
+        }
+        System.out.println(gcd);
     }
-//    END 62 ----------------------------------------------------------------------------------------------------------
+//    END 62 -----------------------------------------------------------------------------------------------------------
 
-
+//    Question 63 Predict Tuition Future ------------------------------------------------------------------------------
+    public static void predictFutureTuition(int x){
+        int years = 0;
+        int total = x;
+        while (total <= (x*2)){
+            years++;
+            total *= 1.07;
+        }
+        System.out.println("It takes " + years + " for " + x + " to now equal " + total);
+    }
+    //    END 63 -------------------------------------------------------------------------------------------------------
     public static void main(String[] args) {
-
-
-
-
-
-
-
-
         // Conditionals -----------------------------------------------------------------------------
 //        System.out.println("This is from slide 44 on conidtional");
 //        System.out.println(bmi(350, 3));
@@ -194,19 +202,46 @@ public class Main {
 //        guessTheNumber();
 //        System.out.println("\n\nThis is from slide 61 on Loops");
 //        multiplicationTable(12);
-
-
+//        gcd(10, 5);
+//        predictFutureTuition(10000);
         // Loops ------------------------------------------------------------------------------------
 
+
+
+    }//END of MAIN
+
+//    private static void evilQuestion10(String s) {
+//        System.out.println(s);
+//    }
+//    private static void evilQuestion10(int i) {
+//        System.out.println(i);
+//    }
+
+
+}// End of Class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //        print out csv into java using printf in this format ex
-        //        Course Code: xxxx     |Course Name: xxxxxxxxxxxx      |Course Instructor: xxxxxx xxxxxx       |
-        //        Course Code: xxxx     |Course Name: xxxxxxxxxxxx      |Course Instructor: xxxxxx xxxxxx       |
-        //        Course Code: xxxx     |Course Name: xxxxxxxxxxxx      |Course Instructor: xxxxxx xxxxxx       |
-        //        Course Code: xxxx     |Course Name: xxxxxxxxxxxx      |Course Instructor: xxxxxx xxxxxx       |
+//        Course Code: xxxx     |Course Name: xxxxxxxxxxxx      |Course Instructor: xxxxxx xxxxxx       |
+//        Course Code: xxxx     |Course Name: xxxxxxxxxxxx      |Course Instructor: xxxxxx xxxxxx       |
+//        Course Code: xxxx     |Course Name: xxxxxxxxxxxx      |Course Instructor: xxxxxx xxxxxx       |
+//        Course Code: xxxx     |Course Name: xxxxxxxxxxxx      |Course Instructor: xxxxxx xxxxxx       |
 //        File file = new File("courses.txt");
 //        if(file.exists()){
 //            System.out.println("File Exists " + file.exists());
-            //Not sure why the try is not working
+//Not sure why the try is not working
 //            try {
 //                Scanner input = new Scanner(System.in);
 //                while (input.hasNextLine()) {
@@ -224,24 +259,13 @@ public class Main {
 
 //___________________________________________________________________________________________________________________________________________
 
-        System.out.println("Figuring out the question 10 gotcha");
-        String one = "This";
-        String two = "is";
-        String three = "poop";
-        int i1 = 1;
-        int i2 = 2;
-        int i3 = 3;
-
-        evilQuestion10(one+two+three);
-        evilQuestion10(i1+i2+i3);
-
-
-    }//END of MAIN
-
-    private static void evilQuestion10(String s) {
-        System.out.println(s);
-    }
-    private static void evilQuestion10(int i) {
-        System.out.println(i);
-    }
-}// End of Class
+//        System.out.println("Figuring out the question 10 gotcha");
+//        String one = "This";
+//        String two = "is";
+//        String three = "poop";
+//        int i1 = 1;
+//        int i2 = 2;
+//        int i3 = 3;
+//
+//        evilQuestion10(one+two+three);
+//        evilQuestion10(i1+i2+i3);
