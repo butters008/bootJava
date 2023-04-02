@@ -1,4 +1,4 @@
-package com.teksystem;
+package com.teksystem.CoreJava;
 /*
 *
 * Combing Slide 56 and Slide 52 onto on class file so we are not making multiple files

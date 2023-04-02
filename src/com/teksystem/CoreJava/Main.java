@@ -1,4 +1,4 @@
-package com.teksystem;
+package com.teksystem.CoreJava;
 
 import java.io.File;
 import java.io.FileNotFoundException;

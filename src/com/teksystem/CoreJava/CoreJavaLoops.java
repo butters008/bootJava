@@ -1,4 +1,4 @@
-package com.teksystem;
+package com.teksystem.CoreJava;
 
 public class CoreJavaLoops {
 
