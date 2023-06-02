@@ -1,4 +1,4 @@
-package com.teksystem.UdemyJavaMC;
+package com.butterfield.UdemyJavaMC;
 
 public class SpeedConverter {
     public static long toMilesPerHour(double kilometersPerHour){
