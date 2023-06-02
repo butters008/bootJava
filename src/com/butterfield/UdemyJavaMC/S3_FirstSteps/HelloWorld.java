@@ -1,4 +1,4 @@
-package com.butterfield.UdemyJavaMC.section3;
+package com.butterfield.UdemyJavaMC.S3_FirstSteps;
 
 public class HelloWorld {
     public static void main(String[] args) {
@@ -53,8 +53,17 @@ public class HelloWorld {
         System.out.println("Busted Max value " + bustedMaxValue);
 
         int bustedMinValue = intMinValue - 1;
-        System.out.println("Busted Min value " + bustedMinValue);
+        System.out.println("Busted Min value " + bustedMinValue + "\n");
 
+        //If you did this without the L, you would get error "integer number too large"
+        long biggerThanInt = 2_147_483_647_234L;
+        System.out.println("Number is bigger than int value " + biggerThanInt + "\n");
 
+        //Primitive Types - Casting
+        int declareOne = 1, declareTwo = 2, declareThree = 3;
+        System.out.println("Testing multi declaration on one line; " + declareOne + " , " + declareTwo + " , " + declareThree);
+
+        byte myMinByte = Byte.MIN_VALUE;
+        System.out.println("Casting -> " + (byte)(myMinByte / 2));
     }
 }
