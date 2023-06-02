@@ -171,4 +171,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/intellij+all,windows,macos,linux,dbeaver
+.idea/misc.xml
