@@ -34,7 +34,7 @@ public class HelloWorldPart2 {
          * We are checking if makeOfCar == Ford,
          * If the value does equal makeOfCar, we assign it value1, if not value2
          *
-         * This can be shown by swapping true and false. 
+         * This can be shown by swapping true and false.
          */
         String makeOfCar = "Ford";
         boolean isDomestic = makeOfCar == "Ford" ? true : false ;
