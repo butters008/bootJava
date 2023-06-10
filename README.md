@@ -15,3 +15,6 @@ Also, I do want to make sure that if I do any online course that I give credit w
 #### YouTube
 
 
+#### Website
+* For the random code bit - https://stackoverflow.com/questions/8878015/return-true-or-false-randomly#:~:text=You%20can%20use%20the%20following%20for%20an%20unbiased%20result%3A,(2)%20%3D%3D%200)%20%3F
+
