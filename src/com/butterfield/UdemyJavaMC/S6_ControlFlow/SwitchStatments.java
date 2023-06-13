@@ -1,6 +1,6 @@
 package com.butterfield.UdemyJavaMC.S6_ControlFlow;
 
-public class Driver {
+public class SwitchStatments {
     public static void main(String[] args) {
         int x = 4;
 
