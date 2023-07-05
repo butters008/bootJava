@@ -12,5 +12,9 @@ public class Driver {
         car.setMake("Dodge");
         car.setModel("car");
         car.describeCar();
+
+        OOP_Record oopR = new OOP_Record("Record", 1, "Programming");
+        System.out.println(oopR);
+        System.out.println(oopR + " taking " + oopR.classList());
     }
 }

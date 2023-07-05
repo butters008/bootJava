@@ -31,3 +31,30 @@ Encapsulation
 - Building of behavior and attributes on a single object
 - The other is the practice of hiding fields, and some methods, from public access
 
+With what he described Ref vs Obj vs Instance vs class
+Class = blueprint to build house
+Object = each house we build using said blueprint
+Ref = Each house we build has a location/address
+|-> We can copy that reference as many times as we like, but there is still just one house that we are referring to
+|-> We can pass ref as params to constructors and methods
+    |-> Look at pictures for reference
+Instance = The variable that is assigned to the object
+
+POJO = Plain Old Java Object -> class that generally has instance fields
+- It is used to house data, and pass data, between functional classes
+- has few, if any methods outside of getters and setters
+- Many DB frameworks uses POJO to read data from, or write data to, DB, files or streams
+- Also can be called bean or JavaBean
+- sometimes called an Entity, because it mirrors database entities
+- AKA = DTO - Data Transfer Object
+- Look at Cow App entity class for POJO example
+
+The Record (Official in JDK 16)
+- The record is a special class that contains data, that is not meant to be altered
+- It seeks to achieve immutability, for the data in its members
+- It only contains the most fundamental methods, such as constructors and accessors
+- I dont have to generate this code
+- // Inisde the (...) is called the record header
+- //Record header consists of record components, a comma delimited list of components
+- Prints this out as array?
+- You can uses this for data immutable, cannot use a setter

@@ -11,10 +11,23 @@ public class OOP_Basic {
     //Constructors
     public OOP_Basic(){} //This should not have errored, should have empty constructor by default - IDK
 
+    //This is from the video lecture, thought it was pretty cool.
+    public OOP_Basic(String make){
+        this(make, "Model", "Green", 2, false);
+    }
+
     public OOP_Basic(String make, String model, String color){
         this.make = make;
         this.model = model;
         this.color = color;
+    }
+
+    public OOP_Basic(String make, String model, String color, int doors, boolean convertible) {
+        this.make = make;
+        this.model = model;
+        this.color = color;
+        this.doors = doors;
+        this.convertible = convertible;
     }
 
     //Getters and Setters
