@@ -1,0 +1,113 @@
+The four pillars of OOP are Inheritance, Encapsulation, Polymorphism, and Composition
+
+Part 1 = Inheritance
+Part 2 = Encapsulation, Polymorphism, and Composition
+
+Object -> Like a computer
+
+Object have 2 basics
+State -> Like how much RAM or OS it has
+Behavior -> Like Turning on and turning off
+
+What he wants it to create a class called Car
+
+Cool note;
+- Classes can be organized into logical groupings, which are called packages
+- You delcare a package name in the class using the package statement
+- If you do not declare a package, the class implicitly belongs to the default package.
+- A class is said to be a top-level class, if it is defined in the source code file, and not enclosed in the code block
+of another class, type, method
+- A top-level class has only two valid access modifier options: public or none
+    - public   = any other class in any package can access this class
+    - ( none ) = When the modifier is omitted, this has a special meaning, called package access, meaning the class is accessible
+                only to classes within the same package
+- Valid access modifiers go from lest restrictive (top) to most restrictive (bottom)
+    - public
+    - protected = allows classes in the same package, and any subclassed in other packages, to have access to the member
+    - ( none specified )
+    - private = means no other class can access this member
+
+Encapsulation
+- Building of behavior and attributes on a single object
+- The other is the practice of hiding fields, and some methods, from public access
+
+With what he described Ref vs Obj vs Instance vs class
+Class = blueprint to build house
+Object = each house we build using said blueprint
+Ref = Each house we build has a location/address
+|-> We can copy that reference as many times as we like, but there is still just one house that we are referring to
+|-> We can pass ref as params to constructors and methods
+    |-> Look at pictures for reference
+Instance = The variable that is assigned to the object
+
+POJO = Plain Old Java Object -> class that generally has instance fields
+- It is used to house data, and pass data, between functional classes
+- has few, if any methods outside of getters and setters
+- Many DB frameworks uses POJO to read data from, or write data to, DB, files or streams
+- Also can be called bean or JavaBean
+- sometimes called an Entity, because it mirrors database entities
+- AKA = DTO - Data Transfer Object
+- Look at Cow App entity class for POJO example
+
+The Record (Official in JDK 16)
+- The record is a special class that contains data, that is not meant to be altered
+- It seeks to achieve immutability, for the data in its members
+- It only contains the most fundamental methods, such as constructors and accessors
+- I dont have to generate this code
+- // Inisde the (...) is called the record header
+- //Record header consists of record components, a comma delimited list of components
+- Prints this out as array?
+- You can uses this for data immutable, cannot use a setter
+
+Inheritance
+- A form of code reuse
+- Parents can have multiple children
+- Child can only have one parent
+- Use class diagrams - not specific for inheritance, just super useful.
+- If you dont make a call to super(), then Java will make it for you, use super default
+- if your super constructor doesn't have a default constructor, than you must explicitly call super()
+in all of your constructors, passing the right args to the constructor
+- All subclasses can execute methods even though the code was declared in the parent class
+- the code doesn't have to be duplicated in each subclass
+- we can change code in the subclass (The toString method in child is this example)
+- Override can do one of three things
+    1) It can implement completely different behavior, overriding the behavior of the parent
+    2) It can simply call the parent class method, which is redundant to do
+    3) It can call parent class method AND run our code, extending the functionality of subclass method
+
+Polymorphism
+- simply means "many forms"
+- advantages
+    - makes code simpler
+    - encourages code extensibility
+
+java.lang.Object
+- Have to use Java's API for this class (page ref - https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html)
+- extends Object
+- Every class inherits Object by default
+
+super V this
+- super = is used to access of call the parent class members (vars and methods)
+    - Common for method overriding from the parent class
+- this = is used to call the current class members (vars and methods)
+    - this = required when we have a param with the same name as an instance var or field
+        -> See any constructor for example
+- A constructor can have a call to super() or this(), but not both
+
+Overloading vs Overriding
+- Overloading = providing two or more seperate methods, in a class, with the same name but different params
+    - method return type may or may not be different and allows us to reuse the same method name
+    - reduces duplicate code, and have to remember multiple method names
+    - We can overload static and non static methods
+    - Normally in single class, can be done in subclasses
+-Overriding = defining a method in a child class, that already exist in the child class, that already exists in the
+parent class with the same signature (same names and args)
+    - Need to extend parent class to access methods
+    - AKA: Runtime Polymorphism or Dynamic Method Dispatch
+    - Recommend we use @Override
+        - It get the compiler to flag an error if you dont do it properly
+    - Can't override a static method
+    -Only inherited methods can be overriden (the one in child class)
+
+
+
