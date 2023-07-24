@@ -58,3 +58,56 @@ The Record (Official in JDK 16)
 - //Record header consists of record components, a comma delimited list of components
 - Prints this out as array?
 - You can uses this for data immutable, cannot use a setter
+
+Inheritance
+- A form of code reuse
+- Parents can have multiple children
+- Child can only have one parent
+- Use class diagrams - not specific for inheritance, just super useful.
+- If you dont make a call to super(), then Java will make it for you, use super default
+- if your super constructor doesn't have a default constructor, than you must explicitly call super()
+in all of your constructors, passing the right args to the constructor
+- All subclasses can execute methods even though the code was declared in the parent class
+- the code doesn't have to be duplicated in each subclass
+- we can change code in the subclass (The toString method in child is this example)
+- Override can do one of three things
+    1) It can implement completely different behavior, overriding the behavior of the parent
+    2) It can simply call the parent class method, which is redundant to do
+    3) It can call parent class method AND run our code, extending the functionality of subclass method
+
+Polymorphism
+- simply means "many forms"
+- advantages
+    - makes code simpler
+    - encourages code extensibility
+
+java.lang.Object
+- Have to use Java's API for this class (page ref - https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html)
+- extends Object
+- Every class inherits Object by default
+
+super V this
+- super = is used to access of call the parent class members (vars and methods)
+    - Common for method overriding from the parent class
+- this = is used to call the current class members (vars and methods)
+    - this = required when we have a param with the same name as an instance var or field
+        -> See any constructor for example
+- A constructor can have a call to super() or this(), but not both
+
+Overloading vs Overriding
+- Overloading = providing two or more seperate methods, in a class, with the same name but different params
+    - method return type may or may not be different and allows us to reuse the same method name
+    - reduces duplicate code, and have to remember multiple method names
+    - We can overload static and non static methods
+    - Normally in single class, can be done in subclasses
+-Overriding = defining a method in a child class, that already exist in the child class, that already exists in the
+parent class with the same signature (same names and args)
+    - Need to extend parent class to access methods
+    - AKA: Runtime Polymorphism or Dynamic Method Dispatch
+    - Recommend we use @Override
+        - It get the compiler to flag an error if you dont do it properly
+    - Can't override a static method
+    -Only inherited methods can be overriden (the one in child class)
+
+
+
