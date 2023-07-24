@@ -1,0 +1,24 @@
+Composition
+- Inheritance defines an IS A relationship
+- Composition defines a HAS A relationship
+- Composition = is a way to make the combination of classes act like a single coherent object
+- SIDE NOTES
+    - I am pretty sure there is a lot of composition being used in my work and I think in Unity and LibGDX as well.
+        - Pretty cool huh
+- Creating objects within objects
+- General rule, you probably want to use composition first
+- We used both here
+- All of our parts were able to inherit a set of attributes, like manufacturer and model
+- The calling code did not have to know anything about these parts, to get driver (Composition_BuildIt_Example.java) to do something
+Reason composition is preferred over inheritance
+    - Is more flexible, you can add, remove, and change are less likely to have a downstream effect
+    - Provides functional reuse outside of the class hierarchy, meaning classes can share attributes & behavior, by having similar components,
+    instead of inheriting functionality from a parent or base class
+    - Java's inheritance breaks encapsulation, becuase subclasses may need direct access to a parent's state or behavior
+Why is inheritance less flexible
+    - is less flexible
+    - Adding a class to or removing a class from a class hierarchy may impact all subclasses from that point
+    - In addition, a new subclass may not need all the functionality or attributes of its parent clas
+
+Encapsulation
+
