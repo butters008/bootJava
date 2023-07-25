@@ -21,4 +21,15 @@ Why is inheritance less flexible
     - In addition, a new subclass may not need all the functionality or attributes of its parent clas
 
 Encapsulation
-
+- To make the interface simpler, we may want to hide unnecessary details (not the interface type)
+- To protect the integrity of data on an object, we may hide or restrict access to some data and operations
+- To decouple the published interface from the internal details of the class, we may hide actual names and types of class members
+- Problems of NOT encapsulating
+    - Allows direct access to data on an object, can bypass checks and operations
+    - It encourages an interdependency, or coupling, between the calling code and the class
+        - Makes it hard, if you change the class, it will break the calling code
+- Benefits of USING encapsulation
+    - You're not affecting any other code
+    - We protect; fields, members, and some methods of the class, from external access
+    - prevents calling code from bypassing the rules and constraints we've built in
+    - When we create a new object, its initialized with valid data
